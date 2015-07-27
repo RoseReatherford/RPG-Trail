@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Android.App;
+using Android.Support.V4.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
@@ -14,7 +14,7 @@ using Android.Widget;
 
 namespace RPGTrail.Droid
 {
-	public class TabFragment : Fragment
+	public class HeroStatusTabFragment : TabFragment
 	{
 		public override void OnCreate (Bundle savedInstanceState)
 		{
@@ -28,7 +28,7 @@ namespace RPGTrail.Droid
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
-			return inflater.Inflate(Resource.Layout.Home, container, false);
+			return inflater.Inflate(Resource.Layout.main_hero_status, container, false);
 		}
 	}
 }

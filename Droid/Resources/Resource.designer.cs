@@ -68,6 +68,8 @@ namespace RPGTrail.Droid
 			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextStyle = global::RPGTrail.Droid.Resource.Styleable.PagerSlidingTabStrip_pstsTextStyle;
 			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineColor = global::RPGTrail.Droid.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineColor;
 			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineHeight = global::RPGTrail.Droid.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineHeight;
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::RPGTrail.Droid.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::RPGTrail.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Animation
@@ -1552,19 +1554,22 @@ namespace RPGTrail.Droid
 			public const int abc_simple_dropdown_hint = 2130903061;
 			
 			// aapt resource value: 0x7f030016
-			public const int Home = 2130903062;
+			public const int main = 2130903062;
 			
 			// aapt resource value: 0x7f030017
-			public const int Main = 2130903063;
+			public const int main_hero_status = 2130903063;
 			
 			// aapt resource value: 0x7f030018
-			public const int psts_tab = 2130903064;
+			public const int main_home = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int support_simple_spinner_dropdown_item = 2130903065;
+			public const int psts_tab = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int toolbar = 2130903066;
+			public const int support_simple_spinner_dropdown_item = 2130903066;
+			
+			// aapt resource value: 0x7f03001b
+			public const int toolbar = 2130903067;
 			
 			static Layout()
 			{
@@ -1578,6 +1583,12 @@ namespace RPGTrail.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f0a0011
+			public const int ApplicationName = 2131361809;
+			
+			// aapt resource value: 0x7f0a0010
+			public const int Hello = 2131361808;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int abc_action_bar_home_description = 2131361792;
@@ -1642,6 +1653,12 @@ namespace RPGTrail.Droid
 			
 			// aapt resource value: 0x7f0b0000
 			public const int Animation_AppCompat_DropDownUp = 2131427328;
+			
+			// aapt resource value: 0x7f0b00f8
+			public const int AppBaseTheme = 2131427576;
+			
+			// aapt resource value: 0x7f0b00f9
+			public const int AppTheme = 2131427577;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int Base_Animation_AppCompat_DropDownUp = 2131427329;

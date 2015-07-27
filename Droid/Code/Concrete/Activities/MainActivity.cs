@@ -9,26 +9,32 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V4.View;
 using com.refractored;
+using Android.Support.V4.App;
 
 namespace RPGTrail.Droid
 {
 	[Activity (Label = "RPGTrail.Droid", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-	public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
+	public class MainActivity : BaseActivity
 	{
+		#region implemented abstract members of BaseActivity
+
+		protected override int LayoutResource {
+			get {
+				return Resource.Layout.main;
+			}
+		}
+
+		#endregion
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			base.SetContentView (Resource.Layout.Main);
-
 			ViewPager pager = base.FindViewById<ViewPager>(Resource.Id.pager);
-			pager.Adapter;
+			pager.Adapter = new TabPagerAdapter(SupportFragmentManager);
 
 			PagerSlidingTabStrip tabs = base.FindViewById <PagerSlidingTabStrip>(Resource.Id.tabs);
 			tabs.SetViewPager (pager);
 
-			global::Xamarin.Forms.Forms.Init (this, bundle);
-
-			LoadApplication (new App ());
 		}
 	}
 }
